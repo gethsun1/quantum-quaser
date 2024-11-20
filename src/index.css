@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Import the Ubuntu font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, section, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+p, li {
+  font-weight: 300;
+}
+
+
+@keyframes glowing {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.dynamic-bg {
+  background: linear-gradient(90deg, #1E3A8A, #32D4C0, #FFC107, #2C5364);
+  background-size: 400% 400%;
+  animation: glowing 8s ease infinite;
+}
+
+
+a:hover {
+  color: #FFC107;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
