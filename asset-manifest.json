@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/quantum-quaser/static/css/main.edfcffa9.css",
+    "main.js": "/quantum-quaser/static/js/main.cdc2db75.js",
+    "static/media/web3ai.avif": "/quantum-quaser/static/media/web3ai.2c0f29ca64d87147972f.avif",
+    "static/media/sovereigncast.png": "/quantum-quaser/static/media/sovereigncast.fcc1eb17197ceef4ece8.png",
+    "static/media/scalingweb3.avif": "/quantum-quaser/static/media/scalingweb3.cc66e193412c144f9d47.avif",
+    "static/media/gethsunI.jpeg": "/quantum-quaser/static/media/gethsunI.285f87530724385ab7fd.jpeg",
+    "index.html": "/quantum-quaser/index.html",
+    "main.edfcffa9.css.map": "/quantum-quaser/static/css/main.edfcffa9.css.map",
+    "main.cdc2db75.js.map": "/quantum-quaser/static/js/main.cdc2db75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edfcffa9.css",
+    "static/js/main.cdc2db75.js"
+  ]
+}
