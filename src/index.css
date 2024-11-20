@@ -2,63 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* Import the Ubuntu font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+/* General Styles */
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-header, section, footer {
-  padding: 20px;
+/* Header, Section, Footer Styling */
+header {
+  margin: 0; /* Remove default margin to prevent white space at the top */
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  position: fixed; /* Ensure header stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Keep header above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for elegance */
+}
+
+/* Dynamic Background */
+.dynamic-bg {
+  background: linear-gradient(90deg, #1E3A8A, #32D4C0, #FFC107, #2C5364);
+  background-size: 400% 400%;
+  animation: glowing 8s ease infinite;
+  min-height: 80px; /* Set consistent height for the header */
+}
+
+/* Section and Footer */
+section {
+  padding: 50px 10px;
+  margin-top: 100px; /* Ensure sections don't overlap the fixed header */
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #1E293B;
+  color: #F9FAFB;
   text-align: center;
+  margin-top: auto; /* Push footer to the bottom */
 }
 
+/* Navigation Links */
 nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #007BFF;
-  font-weight: 500;
+  font-weight: 700; /* Ensure bold text */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #0056b3;
 }
 
+nav a:focus {
+  outline: 2px solid #FFC107;
+  outline-offset: 4px;
+}
+
+/* Typography */
 h1, h2 {
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 p, li {
   font-weight: 300;
 }
 
-
-@keyframes glowing {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-.dynamic-bg {
-  background: linear-gradient(90deg, #1E3A8A, #32D4C0, #FFC107, #2C5364);
-  background-size: 400% 400%;
-  animation: glowing 8s ease infinite;
-}
-
-
+/* Hover Effects */
 a:hover {
   color: #FFC107;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
 
-
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
   animation: fadeIn ease 2s;
@@ -68,4 +97,26 @@ a:hover {
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* Keyframes for Glowing Animation */
+@keyframes glowing {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Spacing for Sections */
+section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* Ensure footer stays at the bottom */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
