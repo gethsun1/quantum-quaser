@@ -20,7 +20,7 @@ body {
 /* Header, Section, Footer Styling */
 header {
   margin: 0; /* Remove default margin to prevent white space at the top */
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #f9f9f9;
   position: fixed; /* Ensure header stays at the top */
   top: 0;
@@ -28,6 +28,7 @@ header {
   width: 100%;
   z-index: 100; /* Keep header above other elements */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for elegance */
+  max-height: 80px;
 }
 
 /* Dynamic Background */
@@ -40,7 +41,7 @@ header {
 
 /* Section and Footer */
 section {
-  padding: 50px 10px;
+  padding: 80px 10px;
   margin-top: 100px; /* Ensure sections don't overlap the fixed header */
 }
 
@@ -119,4 +120,293 @@ html {
 body {
   display: flex;
   flex-direction: column;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 100px 20px; /* Ensure enough space from the header */
+  background-color: #F3F4F6; /* Light gray for subtle contrast */
+  border-top: 5px solid #32D4C0; /* Match color palette */
+  border-bottom: 5px solid #1E3A8A;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px; /* Space between image and text */
+}
+
+.header-image {
+  flex: 1 1 50px; /* Image takes up some space but not too much */
+  max-width: 50px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Rounded image */
+  border: 4px solid #32D4C0; /* Matching color palette for border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.about-image {
+  flex: 1 1 150px; /* Image takes up some space but not too much */
+  max-width: 150px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Rounded image */
+  border: 4px solid #32D4C0; /* Matching color palette for border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.about-text {
+  flex: 2 1 300px; /* Text section grows more */
+  padding: 10px;
+  border: 2px solid #1E3A8A; /* Matching border for text */
+  border-radius: 8px;
+  background-color: #FFF; /* White background for contrast */
+  color: #333; /* Standard text color */
+}
+
+.about-text ul {
+  list-style-type: disc;
+  margin-left: 20px; /* Indent bullet points */
+}
+
+.about-text p, .about-text ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+
+/* Experience Section Styling */
+.experience-section {
+  padding: 60px 20px;
+  background-color: #F9FAFB; /* Subtle contrast */
+  border-top: 5px solid #32D4C0;
+  border-bottom: 5px solid #1E3A8A;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text */
+}
+
+.experience-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1E3A8A;
+}
+
+.experience-section p {
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Grid Layout for Buttons */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Explorer Buttons */
+.explorer-button {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #32D4C0;
+  border: 2px solid #1E3A8A;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.explorer-button:hover {
+  background-color: #1E3A8A;
+  color: #FFF;
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hackathon Section Styling */
+.hackathons-section {
+  padding: 60px 20px;
+  background-color: #F9FAFB;
+  border-top: 5px solid #32D4C0;
+  border-bottom: 5px solid #1E3A8A;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hackathons-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1E3A8A;
+}
+
+.hackathons-section p {
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.hackathon-card {
+  background-color: #FFF;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hackathon-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1E3A8A;
+  margin-bottom: 15px;
+}
+
+.hackathon-card p {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hackathon-nft {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nft-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+ 
+}
+
+.view-nft-button {
+  background-color: #32D4C0;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-nft-button:hover {
+  background-color: #1E3A8A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* General Section Card Style */
+.section-card {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-card h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 30px;
+}
+
+.section-card p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #4a5568;
+}
+
+.section-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+.section-card ul li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #4a5568;
+}
+
+/* NFT Image and Button Styling */
+.nft-container {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.nft-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.nft-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  border: 1px solid transparent;
+}
+
+.nft-button:hover {
+  background-color: #2563eb;
+  border-color: #3b82f6;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .section-card {
+    padding: 40px 15px;
+  }
+
+  .nft-image {
+    width: 250px;
+  }
+
+  .section-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-card ul li {
+    font-size: 1rem;
+  }
 }

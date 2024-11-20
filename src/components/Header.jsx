@@ -1,13 +1,13 @@
+import React from 'react';
+import gethsun from '../assets/gethsun.jpeg';
+
+
 const Header = () => (
   <header className="w-full fixed top-0 left-0 z-10">
     <div className="dynamic-bg text-[#F9FAFB] py-4 px-8 flex justify-between items-center">
       {/* Personal Avatar */}
       <div className="flex items-center space-x-4">
-        <img
-          src="../assets/gethsun.jpeg"
-          alt="Gethsun"
-          className="w-10 h-10 rounded-full border-2 border-[#F9FAFB]"
-        />
+      <img src={gethsun} alt="Gethsun" className="header-image" />
         <h1 className="text-xl font-bold">Gethsun Misesi</h1>
       </div>
 
