@@ -8,7 +8,7 @@ const About = () => (
       <img src={gethsunI} alt="Gethsun" className="about-image" />
       <div className="about-text">
         <p>
-          Hello, I'm Gethsun, a passionate Blockchain developer with over five years of experience 
+          Hello, I'm Gethsun, a passionate Blockchain developer with over Seven years of experience 
           in creating innovative solutions in the Web3 space. My expertise includes:
         </p>
         <ul>
