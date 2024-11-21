@@ -9,7 +9,7 @@ const Hackathons = () => (
     </p>
 
     <div className="hackathon-card">
-      <h3>Scaling Web3 Hackathon by Encode Club</h3>
+      <h3>Scaling Web3 Hackathon Winner by Encode Club</h3>
       <p>
         <strong>Fedha.io Dapp</strong>: Fedha.io is your gateway to a world of convenient and rewarding crypto experiences. Built on ultra-low gas fee EVM compatible smart rollups, Fedha.io seamlessly connects to Orderly Network's Omnichain order-book, providing unified liquidity across blockchains without the need for bridges. With features like Mpesa-Crypto swaps, Play & Earn Arcade, and Be Your Own Bank, it empowers users to easily manage and earn from crypto assets.
       </p>
