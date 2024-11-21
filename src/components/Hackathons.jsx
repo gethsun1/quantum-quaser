@@ -28,7 +28,7 @@ const Hackathons = () => (
       </p>
       <div className="hackathon-nft">
         <img src={sovereigncast} alt="DoraHacks Winner NFT" className="nft-image" />
-        <a href="https://opensea.io/assets/matic/0x1234567890abcdef" className="nft-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://dorahacks.io/buidl/9426" className="nft-link" target="_blank" rel="noopener noreferrer">
           <button className="view-nft-button">View NFT on OpenSea</button>
         </a>
       </div>
