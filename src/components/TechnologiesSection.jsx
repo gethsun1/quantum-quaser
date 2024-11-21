@@ -2,13 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 
 // Import your technology logos
-import thirdWebLogo from '../assets/thirdweb.png';
+import thirdWebLogo from '../assets/thirdweb.svg';
 import walletConnectLogo from '../assets/walletconnect.png';
 import metamaskLogo from '../assets/MetaMask.svg';
 import etherscanLogo from '../assets/etherscan.png';
 import chainlinkLogo from '../assets/Chainlink.svg';
-import alchemyLogo from '../assets/alchemy.png';
-import infuraLogo from '../assets/infura.png';
+import alchemyLogo from '../assets/alchemy.svg';
+import infuraLogo from '../assets/infura.svg';
 import hardhatLogo from '../assets/hardhat.png';
 
 // Import Slick Carousel CSS
