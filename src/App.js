@@ -5,6 +5,7 @@ import Experience from './components/Experience';
 import Hackathons from './components/Hackathons';
 import AIProficiency from './components/AIProficiency';
 import Footer from './components/Footer';
+import TechnologiesSection from './components/TechnologiesSection';
 
 const App = () => (
   <div>
@@ -13,6 +14,7 @@ const App = () => (
     <Experience />
     <Hackathons />
     <AIProficiency />
+    <TechnologiesSection />
     <Footer />
   </div>
 );

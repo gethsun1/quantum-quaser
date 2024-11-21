@@ -57,7 +57,7 @@ const Footer = () => (
     <div className="mt-4 text-center">
       <p className="mb-2 text-lg font-medium">Join me on Telegram:</p>
       <img
-        src={tgQrCode} // Using the imported image
+        src={tgQrCode} 
         alt="Telegram QR Code"
         className="w-32 h-32 hover:opacity-90 rounded-lg"
       />
