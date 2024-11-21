@@ -4,9 +4,9 @@ import Slider from 'react-slick';
 // Import your technology logos
 import thirdWebLogo from '../assets/thirdweb.png';
 import walletConnectLogo from '../assets/walletconnect.png';
-import metamaskLogo from '../assets/metamask.png';
+import metamaskLogo from '../assets/MetaMask.svg';
 import etherscanLogo from '../assets/etherscan.png';
-import chainlinkLogo from '../assets/chainlink.png';
+import chainlinkLogo from '../assets/Chainlink.svg';
 import alchemyLogo from '../assets/alchemy.png';
 import infuraLogo from '../assets/infura.png';
 import hardhatLogo from '../assets/hardhat.png';
