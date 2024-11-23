@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import tgQrCode from '../assets/tgqr.jpg'; 
+import tgQrCode from '../assets/tgqr.png'; 
 const Footer = () => (
   <footer className="dynamic-bg text-[#F9FAFB] py-6 flex flex-col items-center space-y-6">
     {/* Footer Text */}
@@ -56,11 +56,17 @@ const Footer = () => (
     {/* Telegram QR Code */}
     <div className="mt-4 text-center">
       <p className="mb-2 text-lg font-medium">Join me on Telegram:</p>
-      <img
-        src={tgQrCode} 
-        alt="Telegram QR Code"
-        className="w-32 h-32 hover:opacity-90 rounded-lg"
-      />
+      <a 
+        href="https://t.me/gethsun" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img
+          src={tgQrCode} 
+          alt="Telegram QR Code"
+          className="w-32 h-32 hover:opacity-90 rounded-lg"
+        />
+      </a>
     </div>
   </footer>
 );
