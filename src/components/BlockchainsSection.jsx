@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import GlowingTitle from '../components/GlowingTitle';
 
 // Import blockchain logos
 import ethereumLogo from '../assets/ethereum.svg';
@@ -45,16 +46,17 @@ const BlockchainsSection = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        },  
+        },
       },
     ],
   };
 
   return (
     <section className="bg-[#E5E7EB] py-10 px-6">
-      <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
-        Blockchains I Have Built On
-      </h2>
+      {/* Title with Glowing Effect and Typewriter Animation */}
+      <GlowingTitle text="Blockchains I Have Built On" />
+
+      {/* Slider Section */}
       <Slider {...settings} className="flex items-center">
         <div className="p-4">
           <img src={ethereumLogo} alt="Ethereum" className="h-16 mx-auto" />
@@ -87,10 +89,10 @@ const BlockchainsSection = () => {
           <img src={aptosLogo} alt="Aptos" className="h-16 mx-auto" />
         </div>
         <div className="p-4">
-          <img src={lisk} alt="lisk" className="h-16 mx-auto" />
+          <img src={lisk} alt="Lisk" className="h-16 mx-auto" />
         </div>
         <div className="p-4">
-          <img src={q} alt="q" className="h-16 mx-auto" />
+          <img src={q} alt="Q" className="h-16 mx-auto" />
         </div>
       </Slider>
     </section>

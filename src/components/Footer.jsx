@@ -44,7 +44,7 @@ const Footer = () => (
         >
           gethsun09@gmail.com
         </a>
-      </p>
+      </p>  
       <p>
         Wallet:{" "}
         <span className="text-[#007BFF] font-bold hover:text-[#FFC107]">

@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-
-// Import your technology logos
+import GlowingTitle from '../components/GlowingTitle';
 import thirdWebLogo from '../assets/thirdweb.svg';
 import walletConnectLogo from '../assets/walletconnect.png';
 import metamaskLogo from '../assets/MetaMask.svg';
@@ -10,8 +9,6 @@ import chainlinkLogo from '../assets/Chainlink.svg';
 import alchemyLogo from '../assets/alchemy.svg';
 import infuraLogo from '../assets/infura.svg';
 import hardhatLogo from '../assets/hardhat.png';
-
-// Import Slick Carousel CSS
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -48,9 +45,7 @@ const TechnologiesSection = () => {
 
   return (
     <section className="bg-[#F3F4F6] py-10 px-6">
-      <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
-        Technologies I Use
-      </h2>
+       <GlowingTitle text="Technologies I Use" />
       <Slider {...settings} className="flex items-center">
         <div className="p-4">
           <img src={thirdWebLogo} alt="Third Web" className="h-16 mx-auto" />
