@@ -15,6 +15,7 @@ import suiLogo from '../assets/sui.png';
 import aptosLogo from '../assets/aptos.png';
 import lisk from '../assets/lisk.png';
 import q from '../assets/q.png';
+import secret from '../assets/secret.png';
 
 // Import Slick Carousel CSS
 import 'slick-carousel/slick/slick.css';
@@ -93,6 +94,9 @@ const BlockchainsSection = () => {
         </div>
         <div className="p-4">
           <img src={q} alt="Q" className="h-16 mx-auto" />
+        </div>
+        <div className="p-4">
+          <img src={secret} alt="Q" className="h-16 mx-auto" />
         </div>
       </Slider>
     </section>
