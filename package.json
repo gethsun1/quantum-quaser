@@ -2,6 +2,9 @@
   "name": "quantum-quaser",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Gethsun",
+    "email": "gethsun09@gmail.com"},
   "homepage": "https://gethsun1.github.io/quantum-quaser",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
