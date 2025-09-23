@@ -7,17 +7,22 @@ import AIProficiency from './components/AIProficiency';
 import Footer from './components/Footer';
 import TechnologiesSection from './components/TechnologiesSection';
 import BlockchainsSection from './components/BlockchainsSection';  
+import Milestones from './components/Milestones';
+import BackToTop from './components/BackToTop';
+import RevealOnScroll from './components/RevealOnScroll';
 
 const App = () => (
   <div>
     <Header />
-    <About />
-    <Experience />
-    <Hackathons />
-    <AIProficiency />
-    <TechnologiesSection />
-    <BlockchainsSection />
+    <RevealOnScroll><About /></RevealOnScroll>
+    <RevealOnScroll><Experience /></RevealOnScroll>
+    <RevealOnScroll><Milestones /></RevealOnScroll>
+    <RevealOnScroll><Hackathons /></RevealOnScroll>
+    <RevealOnScroll><AIProficiency /></RevealOnScroll>
+    <RevealOnScroll><TechnologiesSection /></RevealOnScroll>
+    <RevealOnScroll><BlockchainsSection /></RevealOnScroll>
     <Footer />
+    <BackToTop />
   </div>
 );
 

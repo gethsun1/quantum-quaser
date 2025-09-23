@@ -15,6 +15,7 @@ const Header = () => (
       <nav className="space-x-6">
         <a href="#about" className="text-[#007BFF] font-bold hover:text-[#FFC107]">About</a>
         <a href="#experience" className="text-[#007BFF] font-bold hover:text-[#FFC107]">Experience</a>
+        <a href="#milestones" className="text-[#007BFF] font-bold hover:text-[#FFC107]">Milestones</a>
         <a 
         href="https://wa.me/254721913191" 
         target="_blank" 
